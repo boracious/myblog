@@ -21,6 +21,27 @@
 </head>
 <body>
     <!--Dark and Clear Mode-->
+    <!--One button-->
+    <input type="button" id="darkmode" value="Night" onclick="
+        let atags = document.querySelectorAll('a');
+        if(this.value === 'Night'){
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'gray';
+            this.value = 'Day';
+            for (let i = 0; i < atags.length; i++) {
+                atags[i].style.color = 'gray';
+            }
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            this.value = 'Night';
+            for (let i = 0; i < atags.length; i++) {
+                atags[i].style.color = 'black';
+            }
+        }
+        ">
+   
+    <!-- Two buttons 
     <input type="button" value="Night" onclick="
         document.querySelector('body').style.backgroundColor='black';
         document.querySelector('body').style.color='gray';
@@ -29,6 +50,7 @@
     document.querySelector('body').style.backgroundColor='white';
     document.querySelector('body').style.color='black';
     ">
+    -->
     <h1><a href="index.html">DAEGU-AI-SCHOOL STUDY NOTE</a></h1>   
     <div id="container">
         <ol>
